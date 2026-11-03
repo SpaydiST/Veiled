@@ -1,0 +1,50 @@
+# Как показывать имя при клике по игроку: actionbar | title
+display-mode: actionbar
+
+# Как скрывать имя невидимого игрока в сообщениях: blur | hide
+invisible-mode: blur
+
+# Длина блюр-имени (в символах)
+blur-length-min: 3
+blur-length-max: 16
+
+# Перезаписывать файлы локализации из jar при каждом старте.
+# true - переводы всегда актуальные (с новыми ключами). false - копировать только отсутствующие.
+update-lang: true
+
+# Префикс сообщений плагина (MiniMessage) и цвет текста (hex)
+# Пустой префикс - без надписи в начале сообщений
+message-prefix: ""
+message-color: "#FFFFFF"
+
+# Hex-цвета для разных частей сообщений (MiniMessage hex или пусто)
+# Поддерживает: "#RRGGBB", "gradient:#RRGGBB:#RRGGBB", ""
+colors:
+  # Префикс (если message-prefix не пустой)
+  prefix: ""
+  # Имя игрока в чате /me
+  name: "#55FF55"
+  # Основной текст
+  text: "#CCCCCC"
+  # Death-сообщения: имя жертвы
+  death-victim: "#AAAAAA"
+  # Death-сообщения: имя убийцы
+  death-killer: "#AAAAAA"
+  # Advancement-сообщения
+  advancement: "#55FF55"
+  # Whisper-сообщения
+  whisper: "#CCCCCC"
+
+# Не показывать имя при клике по игроку часами/компасом, если установлен плагин Toolkit
+hide-name-on-clock-compass: false
+
+# Ник игрока, чья голова (скин) показывается при клике на невидимого игрока
+# вместо его скрытого имени. Оставь пустым, чтобы показывать только блюр-текст.
+blur-head: ""
+
+# Играть кастомный звук вместо отправки сообщения в чат, если у игрока
+# надета голова другого игрока (player_head). true - включить, false - выключить
+player-head-chat-sound: true
+
+# Название звука (из ресурспака), который играет вместо чата
+player-head-chat-sound-name: "smprevive:classic_hurt"

@@ -1,0 +1,18 @@
+name: Veiled
+version: '${version}'
+
+main: org.example1.veiled.Veiled
+api-version: '26.3'
+load: POSTWORLD
+softdepend: [LibsDisguises, packetevents, Toolkit, CoordinateOffset, FlectonePulse, Chatty]
+
+commands:
+  veiled:
+    description: Veiled admin commands
+    usage: /veiled [reload|mode <actionbar|title>|invisible <blur|hide>]
+    permission: veiled.admin
+
+permissions:
+  veiled.admin:
+    description: Allows using the /veiled command
+    default: op
